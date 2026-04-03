@@ -9,9 +9,11 @@ public class Recursion{
         System.out.println();
         System.out.println("\nFactorial total = " + factorial(5));
         System.out.println("------------------------------------------------");
-        System.out.println("\nSum if individula digits: " + sumDigits(12345)); 
+        System.out.println("\nSum of individual digits: " + sumDigits(12345)); 
         System.out.println("------------------------------------------------");
-        System.out.println("\nReversed String: " + reverse("hello",1));
+        System.out.println("\nReversed String: " + reverse("hello", 1));
+        System.out.println("------------------------------------------------");
+        System.out.println("\nFibonacci number at position 7: " + fibonacci(7));
     }
 
     /**
@@ -34,11 +36,23 @@ public class Recursion{
     public static int sumDigits(int n) {
         if (n < 10) {
             System.out.println(n); // print last digit
-        return 1; // base case
+            return n; // base case
         }
 
         System.out.println("Current digit:" + n % 10); // print current digit
         return (n % 10) + sumDigits(n / 10);
+    }
+
+    /**
+     * Recursively calculates the nth Fibonacci number.
+     */
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n; // base case
+        }
+
+        System.out.println("Fibonacci(" + n + ") = Fibonacci(" + (n - 1) + ") + Fibonacci(" + (n - 2) + ")");
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
     /**
@@ -57,6 +71,7 @@ public class Recursion{
         return reverse(str.substring(1), i + 1) + str.charAt(0);
     }
 
+    
         
 
 }
