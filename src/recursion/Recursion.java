@@ -14,6 +14,8 @@ public class Recursion{
         System.out.println("\nReversed String: " + reverse("hello", 1));
         System.out.println("------------------------------------------------");
         System.out.println("\nFibonacci number at position 7: " + fibonacci(7));
+        System.out.println("------------------------------------------------");
+        System.out.println("\nSum of all even numbers up to 10: " + addAllEvenNumbers(10));
     }
 
     /**
@@ -71,6 +73,20 @@ public class Recursion{
         return reverse(str.substring(1), i + 1) + str.charAt(0);
     }
 
+
+    public static int addAllEvenNumbers(int n){
+
+        if (n == 0){
+            return 0;
+        }
+
+        if (n % 2 == 0) {
+            System.out.println("Adding " + n);
+            return n + addAllEvenNumbers(n - 2);
+        } else {
+            return addAllEvenNumbers(n - 1); // skip odd numbers
+        }
+    }
     
         
 
