@@ -84,7 +84,7 @@ public class Recursion{
             System.out.println("Adding " + n);
             return n + addAllEvenNumbers(n - 2);
         } else {
-            return addAllEvenNumbers(n - 1); // skip odd numbers
+            return n + addAllEvenNumbers(n - 1); // skip odd numbers
         }
     }
     
