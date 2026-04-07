@@ -86,27 +86,29 @@ public class insertIntoFront{
         return newArr;
     }
 
+
+    ///insering to the front of teh array only and not expanding it
      public static int[] infront(int[] array, int value){
-        int[] newarry = new int[array.length];
+        int[] newarry = new int[array.length]; //creating anew array
         
-        newarry[0] = value;
+        newarry[0] = value; //assign it to the front of the new aarray 
         
-        for(int i=0; i<array.length-1; i++){
-            newarry[i +1]=array[i];
+        for(int i=0; i<array.length-1; i++){//pushed out the last value in the onld one to make room for the new value
+            newarry[i +1]=array[i]; //copying the rest of the old array into the new one
         }
-        return newarry;
+        return newarry;///returning the new array
     }
 
-    
+    //inserting anywher withing thw array and making it expand
     public static int[] anywhere(int[] array, int index, int value){
-        int[] newarr= new int[array.length+1];
+        int[] newarr= new int[array.length+1];//creating a new array with an extra space for the insertib=ng value
         
-        for(int i=0; i<index;i++){
+        for(int i=0; i<index;i++){//cpoying the values before the intended index for inserting
             newarr[i] = array[i];
         }
-        newarr[index] = value;
+        newarr[index] = value;//assign the value to the intended index
         
-        for(int i=index; i< array.length;i++){
+        for(int i=index; i< array.length;i++){//copying teh rest of the values from the old array to the new one
             newarr[i+1] = array[i];
         }
         return newarr;
