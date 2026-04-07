@@ -32,6 +32,7 @@ public class insertIntoFront{
         int[] cors= anywhere(array, 0,51);
         for(int i: cors){
             System.out.print(i + " ");
+        }
     }
 
     public static int[] insertInFront(int[] arry, int position, int value) {
