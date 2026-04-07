@@ -9,7 +9,7 @@ public class insertIntoFront{
         System.out.println();
 
 
-        int[] newArr = insertsInFront(arry, 0, 99);
+        int[] newArr = insertInFront(arry, 0, 99);
 
         // Print result
         for (int num : newArr) {
@@ -36,7 +36,7 @@ public class insertIntoFront{
         return newArr;
     }
 
-    public static int[] insertsInFront(int[] arry, int position, int value) {
+    /*public static int[] insertsInFront(int[] arry, int position, int value) {
         int[] newArr = new int[arry.length];
 
         // Copy elements before position
@@ -53,7 +53,7 @@ public class insertIntoFront{
         }
 
         return newArr;
-    }
+    }*/
 
     public static int[] insertInFront(int[] arry, int value) {
         int[] newArr = new int[arry.length];
