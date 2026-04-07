@@ -9,7 +9,7 @@ public class insertIntoFront{
         System.out.println();
 
 
-        int[] newArr = insertsInFront(arry, 2, 99);
+        int[] newArr = insertInFront(arry, 0, 99);
 
         // Print result
         for (int num : newArr) {
@@ -29,8 +29,8 @@ public class insertIntoFront{
         newArr[position] = value;
 
         // Shift remaining elements
-        for (int i = position; i < arry.length; i++) {
-            newArr[i + 1] = arry[i];
+        for (int i = position; i < arry.length -1; i++) {
+            newArr[i+1] = arry[i];
         }
 
         return newArr;
