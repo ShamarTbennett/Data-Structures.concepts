@@ -15,6 +15,23 @@ public class insertIntoFront{
         for (int num : newArr) {
             System.out.print(num + " ");
         }
+
+
+        int[] array= {1,2,3,4,5,6};
+        for(int i: array){
+            System.out.print(i+ " ");
+        }
+        System.out.println();
+        
+        int[] cor= infront(array, 51);
+        for(int i: cor){
+            System.out.print(i + " ");
+        }
+         System.out.println(); System.out.println();
+         
+        int[] cors= anywhere(array, 0,51);
+        for(int i: cors){
+            System.out.print(i + " ");
     }
 
     public static int[] insertInFront(int[] arry, int position, int value) {
@@ -67,5 +84,31 @@ public class insertIntoFront{
         }
 
         return newArr;
+    }
+
+     public static int[] infront(int[] array, int value){
+        int[] newarry = new int[array.length];
+        
+        newarry[0] = value;
+        
+        for(int i=0; i<array.length-1; i++){
+            newarry[i +1]=array[i];
+        }
+        return newarry;
+    }
+
+    
+    public static int[] anywhere(int[] array, int index, int value){
+        int[] newarr= new int[array.length+1];
+        
+        for(int i=0; i<index;i++){
+            newarr[i] = array[i];
+        }
+        newarr[index] = value;
+        
+        for(int i=index; i< array.length;i++){
+            newarr[i+1] = array[i];
+        }
+        return newarr;
     }
 }
