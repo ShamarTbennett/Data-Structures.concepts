@@ -10,11 +10,19 @@ public class Deletion {
         }
         System.out.println();
 
-
         int[] newArr = delete(arry,3);
 
         // Print result
         for (int num : newArr) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println("--------------------");
+
+
+        int[] newArrr = removeAtIndex(arry,3);
+        // Print result
+        for (int num : newArrr) {
             System.out.print(num + " ");
         }
     }
@@ -28,7 +36,7 @@ public class Deletion {
                 count++;
             }
         }
-        
+
         // Create new array
         int[] newarr = new int[count];
 
@@ -40,5 +48,25 @@ public class Deletion {
             }
         }
         return newarr;
+    }
+
+
+    //Remove by INDEX
+    public static int[] removeAtIndex(int[] arr, int index) {
+        // Check for invalid index
+        if (index < 0 || index >= arr.length) {
+            System.out.println("Invalid index!");
+            return arr;
+        }
+
+        int[] newArr = new int[arr.length - 1];
+
+        for (int i = 0, j = 0; i < arr.length; i++) {
+            if (i != index) {
+                newArr[j++] = arr[i];
+            }
+        }
+
+        return newArr;
     }
 }
