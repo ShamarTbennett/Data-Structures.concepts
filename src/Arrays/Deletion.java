@@ -10,7 +10,7 @@ public class Deletion {
         }
         System.out.println();
 
-        int[] newArr = delete(arry,3);
+        int[] newArr = delete2(arry,3);
 
         // Print result
         for (int num : newArr) {
@@ -70,5 +70,23 @@ public class Deletion {
         return newArr;
     }
 
-    public
+    
+    public static int[] delete2(int[] array, int value){
+        int count = 0;
+
+        for(int i: array){
+            if(i != value){
+                  count++;
+            }
+        }
+        int[] arr = new int[count];
+
+        int j = 0;
+        for(int i: array){
+            if(i != value){
+                arr[j++] = i;
+            }
+        }
+        return arr;
+    }
 }
