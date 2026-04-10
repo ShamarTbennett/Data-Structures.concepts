@@ -16,11 +16,11 @@ public class Deletion {
         for (int num : newArr) {
             System.out.print(num + " ");
         }
-
+        System.out.println();
         System.out.println("--------------------");
 
 
-        int[] newArrr = removeAtIndex(arry,3);
+        int[] newArrr = removeAtIndex(arry,2);
         // Print result
         for (int num : newArrr) {
             System.out.print(num + " ");
@@ -69,4 +69,6 @@ public class Deletion {
 
         return newArr;
     }
+
+    public
 }
