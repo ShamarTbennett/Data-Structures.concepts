@@ -17,6 +17,9 @@ public class Search {
         return -1;
     }
 
+
+    
+
     public static int searchs(int[] arr, int value){
 
         for(int i = 0; i < arr.length; i++){
