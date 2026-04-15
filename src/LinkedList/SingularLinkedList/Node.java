@@ -9,6 +9,7 @@ public class Node {
         Data = 0;
         NextNode = null;
     }
+    
      public Node(int data) {
         this.Data = data;
         this.NextNode = null;

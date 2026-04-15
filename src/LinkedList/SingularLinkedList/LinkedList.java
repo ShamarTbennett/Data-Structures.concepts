@@ -12,20 +12,15 @@ public class LinkedList {
     public void InserAtFront(int d){
 
         Node temp = new Node();
-        if(temp != null){
-            temp.setData(d);
-            temp.setNextNode(null);
+        temp.setData(d);
+        temp.setNextNode(null);
 
-            if(Head == null){
-                Head = temp;
-            }
-            else{
-                temp.setNextNode(Head);
-                Head = temp;
-            }
+        if(Head == null){
+            Head = temp;
         }
         else{
-            System.out.println("Memory full; Can't insert.");
+            temp.setNextNode(Head);
+            Head = temp;
         }
     }
 
