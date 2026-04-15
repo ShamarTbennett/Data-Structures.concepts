@@ -1,5 +1,5 @@
 package LinkedList.SingularLinkedList;
-import LinkedList.SingularLinkedList.Node;
+
 
 public class LinkedList {
     
@@ -13,11 +13,11 @@ public class LinkedList {
 
         Node temp = new Node();     //first create a new node
         temp.setData(d);            //set the data to the created node
-        temp.setNextNode(null);  // sext next node to null
+        temp.setNextNode(null);  // set next node to null
 
         //check if its the first node and set the incoming data as the new head if its empty
         if(Head == null){
-            Head = temp; //set haed to incoming data
+            Head = temp; //set head to incoming data
         }
         else{ // if nodes already exist, create a new node and assign the new data to that node
             temp.setNextNode(Head);
