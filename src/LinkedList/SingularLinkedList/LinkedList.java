@@ -24,7 +24,22 @@ public class LinkedList {
             Head = temp;
         }
     }
+ // Insert at end
+    public void insertAtEnd(int d) {
+        Node temp = new Node(d);
 
+        if (Head == null) {
+            Head = temp;
+            return;
+        }
+
+        Node current = Head;
+        while (current.getNextNode() != null) {
+            current = current.getNextNode();
+        }
+
+        current.setNextNode(temp);
+    }
      public void display() {
         Node current = Head;
 
