@@ -36,7 +36,8 @@ public class LinkedList {
         Node current = Head;
         while (current.getNextNode() != null) {
             current = current.getNextNode();
-        }
+        } 
+        
 
         current.setNextNode(temp);
     }
