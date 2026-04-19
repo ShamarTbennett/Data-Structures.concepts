@@ -41,6 +41,19 @@ public class LinkedList {
 
         current.setNextNode(temp);
     }
+
+     // Delete from front
+    public void deleteFromFront() {
+        if (Head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        Head = Head.getNextNode();
+    }
+
+
+
      public void display() {
         Node current = Head;
 
