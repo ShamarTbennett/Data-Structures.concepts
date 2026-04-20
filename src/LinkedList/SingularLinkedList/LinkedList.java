@@ -42,6 +42,9 @@ public class LinkedList {
         current.setNextNode(temp);
     }
 
+
+
+
      // Delete from front
     public void deleteFromFront() {
         if (Head == null) {
@@ -50,8 +53,10 @@ public class LinkedList {
         }
 
         Head = Head.getNextNode();
+
     }
 
+    
 
 
      public void display() {
