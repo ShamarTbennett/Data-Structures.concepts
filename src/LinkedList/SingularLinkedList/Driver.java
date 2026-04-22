@@ -11,5 +11,12 @@ public class Driver {
     List.InserAtFront(10);
 
     List.display();
+
+    List.deleteFromFront();
+    List.display();
+
+    List.deleteFromEnd();
+    List.display();
+
     }
 }

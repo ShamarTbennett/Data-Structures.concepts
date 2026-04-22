@@ -73,6 +73,7 @@ public class LinkedList {
         }
 
         current.setNextNode(null);
+    }
 
     
 
