@@ -56,6 +56,24 @@ public class LinkedList {
 
     }
 
+    public void deleteFromEnd() {
+        if (Head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        if (Head.getNextNode() == null) {
+            Head = null;
+            return;
+        }
+
+        Node current = Head;
+        while (current.getNextNode().getNextNode() != null) {
+            current = current.getNextNode();
+        }
+
+        current.setNextNode(null);
+
     
 
 
