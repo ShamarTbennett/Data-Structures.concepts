@@ -9,6 +9,9 @@ public class Driver {
     List.InserAtFront(18);
     List.InserAtFront(17);
     List.InserAtFront(10);
+    List.InserAtFront(5);
+    List.InserAtFront(3);
+    List.InserAtFront(1);
 
     List.display();
 
