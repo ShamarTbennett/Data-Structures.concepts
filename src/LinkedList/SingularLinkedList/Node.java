@@ -5,9 +5,10 @@ public class Node {
 
     
 
-    
+
     private int Data;
     private Node NextNode;
+
 
     public Node(){
         Data = 0;
