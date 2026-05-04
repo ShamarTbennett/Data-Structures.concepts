@@ -18,6 +18,7 @@ n
 LinkedList
 c
 
+b
 x
     private int Data;
     private Node NextNode;
