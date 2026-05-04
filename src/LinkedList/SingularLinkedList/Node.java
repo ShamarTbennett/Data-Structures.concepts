@@ -14,6 +14,7 @@ public class Node {
 
 
 
+n
 
 x
     private int Data;
