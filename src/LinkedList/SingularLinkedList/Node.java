@@ -16,6 +16,7 @@ public class Node {
 
 n
 
+c
 x
     private int Data;
     private Node NextNode;
