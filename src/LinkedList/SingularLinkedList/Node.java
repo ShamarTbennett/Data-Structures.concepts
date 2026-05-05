@@ -16,7 +16,6 @@ public class Node {
 
 n
 LinkedList
-c
 
 
 
