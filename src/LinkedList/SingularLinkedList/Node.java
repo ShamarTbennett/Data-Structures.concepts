@@ -19,7 +19,7 @@ LinkedList
 c
 
 
-x
+
     private int Data;
     private Node NextNode;
 
