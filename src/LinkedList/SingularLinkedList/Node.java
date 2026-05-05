@@ -14,9 +14,6 @@ public class Node {
 
 
 
-n
-LinkedList
-
 
 
     private int Data;
