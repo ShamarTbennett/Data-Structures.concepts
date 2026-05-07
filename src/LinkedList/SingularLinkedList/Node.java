@@ -15,6 +15,7 @@ public class Node {
 
 
 
+m
 
     private int Data;
     private Node NextNode;
