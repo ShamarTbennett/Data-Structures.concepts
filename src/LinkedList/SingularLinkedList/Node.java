@@ -2,8 +2,26 @@ package LinkedList.SingularLinkedList;
 
 public class Node {
     
+
+    
+
+
+
+
+
+
+
+
+
+
+
+m
+bn
+
+
     private int Data;
     private Node NextNode;
+
 
     public Node(){
         Data = 0;
