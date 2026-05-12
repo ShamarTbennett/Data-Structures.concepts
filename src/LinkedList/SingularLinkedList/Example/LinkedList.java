@@ -29,7 +29,25 @@ public class LinkedList {
         head = temp;
     }
 
-    
+    public void insertanywhere(int index, int d){
+        Node temp = new Node();
+        temp.setData(d);
+        temp.setNextNode(null);
+
+        if(index == 0){
+            insertAtStart(d);
+        }
+
+        Node n = head;
+        for(int i=0; i<index-1;i++){
+            n = n.getNextNode();
+        }
+
+        temp.setNextNode(n.getNextNode());
+
+        n.setNextNode(temp);
+    }
+
     public void display(){
         Node current = head;
 
