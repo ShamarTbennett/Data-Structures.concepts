@@ -24,6 +24,18 @@ public class LinkedList {
             Head = temp;
         }
     }
+
+    public void InserAtStart(int d){
+        Node temp = new Node();     //first create a new node
+        temp.setData(d);            //set the data to the created node
+        temp.setNextNode(null);  // set next node to null
+        temp.setNextNode(Head);    // set the next node to the head, which is null
+
+        Head = temp; // set the current head to the new created node
+    }
+
+
+
  // Insert at end
     public void insertAtEnd(int d) {
         Node temp = new Node(d);

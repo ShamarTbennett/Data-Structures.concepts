@@ -15,6 +15,9 @@ public class Driver {
 
     List.display();
 
+    List.InserAtStart(555);
+    List.display();
+
     List.deleteFromFront();
     List.display();
 
