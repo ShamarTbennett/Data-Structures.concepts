@@ -10,6 +10,9 @@ public class Driver {
         list.insert(20);
 
         list.display();
+
+        list.insertAtStart(21);
+        list.display();
     }
 
     
