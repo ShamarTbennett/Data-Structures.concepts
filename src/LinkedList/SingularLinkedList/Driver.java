@@ -18,11 +18,14 @@ public class Driver {
     List.InserAtStart(555);
     List.display();
 
-    List.deleteFromFront();
+    List.insertAnyWhere(3,333);
+    List.display();
+
+    /*List.deleteFromFront();
     List.display();
 
     List.deleteFromEnd();
-    List.display();
+    List.display();*/
 
     }
 }
