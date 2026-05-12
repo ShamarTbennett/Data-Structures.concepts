@@ -142,18 +142,53 @@ public class LinkedList {
 
 
 
-     public void display() {
+   // Displays all nodes in the linked list from head to tail
+    public void display() {
+        // Start traversal from the head of the list
         Node current = Head;
 
+        // If the list is empty, notify the user and exit
         if (current == null) {
             System.out.println("List is empty.");
             return;
         }
 
+        // Traverse the list until the end (null)
         while (current != null) {
+            // Print the current node's data followed by an arrow
             System.out.print(current.getData() + " -> ");
+            // Move to the next node
             current = current.getNextNode();
         }
+
+        // Indicate the end of the list
         System.out.println("null");
     }
+
+
+    // Counts the number of nodes in the linked list
+    public void countNodes() {
+        // Start traversal from the head
+        Node current = Head;
+        int count = 0;
+
+        // Traverse until the end of the list
+        while (current != null) {
+            // Move to the next node
+            current = current.getNextNode();
+
+            // Print the current count during traversal
+            System.out.println("Node ==> " + count);
+
+             // Increment the node counter
+            count += 1;
+        }
+
+        // Print a blank line for readability
+        System.out.println();
+
+        // Display the final count
+        System.out.println("Total number of nodes: " + count);
+    }
+
 }

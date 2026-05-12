@@ -21,6 +21,8 @@ public class Driver {
     List.insertAnyWhere(3,333);
     List.display();
 
+    List.countNodes();
+
     /*List.deleteFromFront();
     List.display();
 
