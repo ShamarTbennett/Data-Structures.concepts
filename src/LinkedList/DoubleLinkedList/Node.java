@@ -17,4 +17,24 @@ public class Node {
         this.previousNode = null;
     }
 
+    public void setdata(int d){
+        this.data = d;
+    }
+    public int getdata(){
+        return data;
+    }
+
+    public void setNextNode(Node n){
+        this.nextNode = n;
+    }
+    public Node getNextNode(){
+        return nextNode;
+    }
+
+    public void setPreviousNode(Node n){
+        this.previousNode = n;
+    }
+    public Node getPreviosNode(){
+        return previousNode;
+    }
 }
