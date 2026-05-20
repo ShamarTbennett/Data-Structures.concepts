@@ -16,6 +16,12 @@ public class DoubleLinkedList {
         temp.setNextNode(null);
         temp.setPreviousNode(null);
       
+      if(head == null){
+        head == temp;
+      }else{
+        
+      }
+
     }
 }
 
