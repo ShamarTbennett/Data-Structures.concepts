@@ -10,7 +10,7 @@ public class DoubleLinkedList {
     }
 
 
-    public void insertDoubleLinkedList(int data){
+    public void  insertsInDoubleLinkedList (int data){
         Node temp = new Node();
         temp.setData(data);
         temp.setNextNode(null);
