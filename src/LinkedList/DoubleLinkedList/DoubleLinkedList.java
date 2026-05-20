@@ -4,6 +4,12 @@ public class DoubleLinkedList {
     private Node head;
     private Node tail;
 
+    public DoubleLinkedList(){
+        this.head = null;
+        this.tail = null;
+    }
+
+
     public void insertDoubleLinkedList(int data){
         Node temp = new Node();
         temp.setData(data);
