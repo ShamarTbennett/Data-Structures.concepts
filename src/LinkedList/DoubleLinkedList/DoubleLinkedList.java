@@ -4,7 +4,12 @@ public class DoubleLinkedList {
     private Node head;
     private Node tail;
 
-<<<<<<< HEAD
+     // Constructor
+    public DoubleLinkedList() {
+        this.head = null;
+        this.tail = null;
+    }
+
     // Insert at end
     public void insert(int data) {
 
@@ -21,29 +26,38 @@ public class DoubleLinkedList {
 
             tail = newNode;
         }
-    }
-
-
-=======
-    public DoubleLinkedList(){
-        this.head = null;
-        this.tail = null;
-    }
-
-
-    public void  insertsInDoubleLinkedList (int data){
-        Node temp = new Node();
-        temp.setData(data);
-        temp.setNextNode(null);
-        temp.setPreviousNode(null);
-      
-      if(head == null){
-        head == temp;
-      }else{
-        
-      }
 
     }
->>>>>>> 0557cd21da9c3657ee29708484c5f7e49ba969f5
+
+    // Display forward
+    public void displayForward() {
+
+        Node temp = head;
+
+        System.out.println("Forward:");
+
+        while (temp != null) {
+            System.out.print(temp.getdata() + " <-> ");
+            temp = temp.getNextNode();
+        }
+
+        System.out.println("null");
+    }
+
+    // Display backward
+    public void displayBackward() {
+
+        Node temp = tail;
+
+        System.out.println("Backward:");
+
+        while (temp != null) {
+            System.out.print(temp.getdata() + " <-> ");
+            temp = temp.getPreviosNode();
+        }
+
+        System.out.println("null");
+    }
+
 }
 
