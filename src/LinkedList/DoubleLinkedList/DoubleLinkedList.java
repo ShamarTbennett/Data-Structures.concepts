@@ -14,12 +14,14 @@ public class DoubleLinkedList {
 
     // Insert at end
     public void insert(int data) {
-
+        //creating a new node
         Node newNode = new Node(data);
 
         // If list is empty
         if (head == null) {
+            //set head to the new node
             head = newNode;
+            //assign the new node a tail
             tail = newNode;
         } else {
 
