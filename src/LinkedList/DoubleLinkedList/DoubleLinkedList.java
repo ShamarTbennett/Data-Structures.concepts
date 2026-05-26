@@ -16,17 +16,21 @@ public class DoubleLinkedList {
         this.tail = null;
     }
 
+
+
     /**
      * Inserts a new node with the given data at the end of the list.
      * @param data the value to store in the new node
      */
     public void insert(int data) {
-
+        //creating a new node
         Node newNode = new Node(data);
 
         // If list is empty, set both head and tail to the new node.
         if (head == null) {
+            //set head to the new node
             head = newNode;
+            //assign the new node a tail
             tail = newNode;
         } else {
             // Append to the end and update links.
