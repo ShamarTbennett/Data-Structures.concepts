@@ -1,39 +1,47 @@
 package LinkedList.DoubleLinkedList;
 
+/**
+ * A simple doubly linked list implementation with head and tail pointers.
+ * Supports insertion at the end and traversal in both forward and backward directions.
+ */
 public class DoubleLinkedList {
     private Node head;
     private Node tail;
 
-     // Constructor
+    /**
+     * Initializes an empty doubly linked list.
+     */
     public DoubleLinkedList() {
         this.head = null;
         this.tail = null;
     }
 
-    // Insert at end
+    /**
+     * Inserts a new node with the given data at the end of the list.
+     * @param data the value to store in the new node
+     */
     public void insert(int data) {
 
         Node newNode = new Node(data);
 
-        // If list is empty
+        // If list is empty, set both head and tail to the new node.
         if (head == null) {
             head = newNode;
             tail = newNode;
         } else {
-
+            // Append to the end and update links.
             tail.setNextNode(newNode);
             newNode.setPreviousNode(tail);
-
             tail = newNode;
         }
-
     }
 
-    // Display forward
+    /**
+     * Prints list data from head to tail.
+     */
     public void displayForward() {
 
         Node temp = head;
-
         System.out.println("Forward:");
 
         while (temp != null) {
@@ -44,11 +52,12 @@ public class DoubleLinkedList {
         System.out.println("null");
     }
 
-    // Display backward
+    /**
+     * Prints list data from tail to head.
+     */
     public void displayBackward() {
 
         Node temp = tail;
-
         System.out.println("Backward:");
 
         while (temp != null) {
