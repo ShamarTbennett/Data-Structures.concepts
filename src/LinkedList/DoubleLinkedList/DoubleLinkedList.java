@@ -69,6 +69,7 @@ public class DoubleLinkedList {
             temp = temp.getPreviosNode();
         }
 
+
         System.out.println("null");
     }
 
