@@ -61,6 +61,7 @@ public class DoubleLinkedList {
      */
     public void displayBackward() {
 
+
         Node temp = tail;
         System.out.println("Backward:");
 
