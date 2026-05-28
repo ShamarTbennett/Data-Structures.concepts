@@ -25,16 +25,16 @@ public class ExampleDoubleLinkedList {
         if(head == null){
             // If list is empty, set both head and tail to the new node.
             //set head to the new node
-            head = tail;
+            head = temp;
             //assign the new node a tail
-            tail = head;
+            tail = temp;
         }else{
             // Append to the end and update links.
             tail.setNextNode(temp);
             temp.setPreviousNode(tail);
             tail = temp;
         }
-        
+
     }
 
 
