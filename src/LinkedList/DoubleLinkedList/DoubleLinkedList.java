@@ -24,7 +24,10 @@ public class DoubleLinkedList {
      */
     public void insert(int data) {
         //creating a new node
-        Node newNode = new Node(data);
+        Node newNode = new Node();
+        newNode.setdata(data);
+        newNode.setNextNode(null);
+        newNode.setPreviousNode(null);
 
         // If list is empty, set both head and tail to the new node.
         if (head == null) {
