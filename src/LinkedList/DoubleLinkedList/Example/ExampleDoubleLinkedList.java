@@ -43,4 +43,19 @@ d
 
 search
 
+ public boid insertinto(int d){
+    Node news = new Node;
+    news.setdata(d);
+    news.setNextNode(null);
+    news.setPreviousNode(null);
+
+    if( head == null){
+        head = news;
+        tail = news;
+    }else{
+        tail.setNextNode(news);
+        news.setPreviousNode(tail);
+        tail= news;
+    }
+ }
 }
