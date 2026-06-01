@@ -62,7 +62,6 @@ public class LinkedList {
 
     }
 
-
    // Insert a new node at the end of the linked list
     public void insertAtEnd(int d) {
 
@@ -89,8 +88,6 @@ public class LinkedList {
         current.setNextNode(temp);
     }
 
-
-
     // Delete the first node from the linked list
     public void deleteFromFront() {
 
@@ -104,7 +101,6 @@ public class LinkedList {
         // The first node is automatically removed
         Head = Head.getNextNode();
     }
-
 
 
     // Delete the last node from the linked list
@@ -138,10 +134,6 @@ public class LinkedList {
     }
 
     
-
-
-
-
    // Displays all nodes in the linked list from head to tail
     public void display() {
         // Start traversal from the head of the list

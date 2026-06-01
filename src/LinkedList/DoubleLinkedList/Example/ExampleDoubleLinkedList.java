@@ -37,14 +37,23 @@ public class ExampleDoubleLinkedList {
 
 
     }
+    
+
+    public void display(){
+        Node current = head;
+        while(current != null){
+            System.out.print(current.getdata() + " ");
+            current = current.getNextNode();
+        }
+        System.out.println();
+    }
 
 
-d
 
-search
 
- public boid insertinto(int d){
-    Node news = new Node;
+
+ public void insertinto(int d){
+    Node news = new Node();
     news.setdata(d);
     news.setNextNode(null);
     news.setPreviousNode(null);

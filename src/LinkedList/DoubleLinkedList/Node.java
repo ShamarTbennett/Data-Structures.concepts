@@ -34,7 +34,7 @@ public class Node {
     public void setPreviousNode(Node n){
         this.previousNode = n;
     }
-    public Node getPreviosNode(){
+    public Node getPreviousNode(){
         return previousNode;
     }
 }
