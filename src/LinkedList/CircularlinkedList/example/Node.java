@@ -1,9 +1,11 @@
-package LinkedList.CircularlinkedList;
-public class Node {
-    int data;
-    Node next;
+package LinkedList.CircularlinkedList.example;
 
-    public Node(){
+public class Node {
+    
+    private int data;
+    private Node next;
+
+      public Node(){
         this.data = 0;
         this.next= null;
     }
@@ -13,16 +15,16 @@ public class Node {
         this.next = null;
     }
 
+    public int getData() {
+        return data;
+    }
+
     public void setData(int data) {
         this.data = data;
     }
 
-    public int getData() {
-        return this.data;
-    }
-
     public Node getNext() {
-        return this.next;
+        return next;
     }
 
     public void setNext(Node next) {
