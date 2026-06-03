@@ -54,6 +54,40 @@ public class ExampleDoubleLinkedList {
         }
     }
 
+    public void insertAnywhere(int data, int position){
+        Node temp = new Node();
+        temp.setdata(data);
+        temp.setNextNode(null);
+        temp.setPreviousNode(null);
+
+        if (position == 0 || head == null) {
+            insert(data);
+            return;
+        }else{
+            Node current = head;
+            int count = 0;
+
+            while(current != null && count < position){
+                current = current.getNextNode();
+                count++;
+            }
+
+            if(current == null){
+                tail.setNextNode(temp);
+                temp.setPreviousNode(tail);
+                tail = temp;
+            }else{
+                Node previous = current.getPreviousNode();
+
+                previous.setNextNode(temp);
+                temp.setPreviousNode(previous);
+                
+                temp.setNextNode(current);
+                current.setPreviousNode(temp);
+            }
+        }
+    }
+
     public void display(){
         Node current = head;
         while(current != null){
