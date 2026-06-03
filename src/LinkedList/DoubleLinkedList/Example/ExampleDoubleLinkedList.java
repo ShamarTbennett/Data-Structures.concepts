@@ -38,6 +38,21 @@ public class ExampleDoubleLinkedList {
 
     }
     
+    public void insertatend(int data){
+        Node temp = new Node();
+        temp.setdata(data);
+        temp.setNextNode(null);
+        temp.setPreviousNode(null);
+
+        if(head == null){
+            head = temp;
+            tail = temp;
+        }else{
+            tail.setNextNode(temp);
+            temp.setPreviousNode(tail);
+            tail = temp;
+        }
+    }
 
     public void display(){
         Node current = head;
