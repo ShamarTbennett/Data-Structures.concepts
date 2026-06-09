@@ -26,4 +26,18 @@ public class CircurlarLinkedListexample {
             newNode.setNext(head); // Point new node to head to maintain circular structure
         }
     }
+
+    public void display(){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        Node temp = head;
+        do {
+            System.out.print(temp.getData() + " ");
+            temp = temp.getNext();
+        } while(temp != head);
+        System.out.println();
+    }
+
 }
