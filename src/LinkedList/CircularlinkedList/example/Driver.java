@@ -11,5 +11,9 @@ public class Driver {
 
         System.out.println("Circular Linked List:");
         circularList.display();
+
+        circularList.anyPosition(25, 3);
+        System.out.println("Circular Linked List after inserting 25 at position 3:");
+        circularList.display();
     }
 }
