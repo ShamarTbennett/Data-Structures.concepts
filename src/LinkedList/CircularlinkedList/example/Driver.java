@@ -25,9 +25,6 @@ public class Driver {
 
         System.out.println("Searching for 50 in the list:");
         circularList.search(50);
-       
-
-
 
     }
 }
