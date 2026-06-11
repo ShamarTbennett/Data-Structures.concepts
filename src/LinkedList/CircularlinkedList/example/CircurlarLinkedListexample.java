@@ -59,6 +59,41 @@ public class CircurlarLinkedListexample {
         }
     }
 
+    public void delete(int data){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+
+        if(head.getData() == data){
+            if(head.getNext() == head){ // Only one node in the list
+                head = null;
+            } else {
+                Node temp = head;
+                while(temp.getNext() != head){
+                    temp = temp.getNext();
+                }
+                temp.setNext(head.getNext()); // Point last node to the second node
+                head = head.getNext(); // Update head to the second node
+            }
+            return;
+        }
+
+        Node current = head;
+        Node previous = null;
+
+        do {
+            previous = current;
+            current = current.getNext();
+            if(current.getData() == data){
+                previous.setNext(current.getNext()); // Bypass the current node
+                return;
+            }
+        } while(current != head);
+
+        System.out.println("Element not found in the list.");
+    }
+
     public void display(){
         if(head == null){
             System.out.println("List is empty");
