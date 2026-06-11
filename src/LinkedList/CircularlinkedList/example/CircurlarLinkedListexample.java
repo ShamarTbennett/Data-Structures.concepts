@@ -94,6 +94,22 @@ public class CircurlarLinkedListexample {
         System.out.println("Element not found in the list.");
     }
 
+    public void search(int data){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        Node temp = head;
+        do {
+            if(temp.getData() == data){
+                System.out.println("Element found in the list.");
+                return;
+            }
+            temp = temp.getNext();
+        } while(temp != head);
+        System.out.println("Element not found in the list.");
+    }
+
     public void display(){
         if(head == null){
             System.out.println("List is empty");
