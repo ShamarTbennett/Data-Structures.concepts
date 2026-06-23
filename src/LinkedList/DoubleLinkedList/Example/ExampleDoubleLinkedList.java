@@ -116,21 +116,6 @@ public class ExampleDoubleLinkedList {
         tail= news;
     }
  }
- 
-
-
-
-
-
-
-
-
-
-
- jj
- 
- 
-
 
  
 }
