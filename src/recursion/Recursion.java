@@ -18,6 +18,8 @@ public class Recursion{
         System.out.println("\nSum of all even numbers up to 10: " + addAllEvenNumbers(10));
     }
 
+
+
     /**
      * Recursively calculates the factorial of a non-negative integer.
      */
