@@ -4,7 +4,7 @@ public class Search {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         int target = 4;
-        int result = searchs(arr, target);
+        int result = search(arr, target);
         System.out.println("Element found at index: " + result);
     }
 
